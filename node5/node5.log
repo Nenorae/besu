@@ -1,0 +1,100 @@
+Setting logging level to INFO
+2025-07-27 14:25:58.813+07:00 | main | INFO  | Besu | Starting Besu
+2025-07-27 14:26:00.238+07:00 | main | WARN  | Besu | PoW consensus is deprecated. See CHANGELOG for alternative options.
+2025-07-27 14:26:01.146+07:00 | main | INFO  | Besu | Connecting to 0 static nodes.
+2025-07-27 14:26:01.220+07:00 | main | WARN  | Besu | Forcing tx-pool-min-gas-price=10, since it cannot be greater than the value of min-gas-price
+2025-07-27 14:26:01.647+07:00 | main | INFO  | Besu | 
+####################################################################################################
+#                                                                                                  #
+# Besu version 25.7.0                                                                              #
+#                                                                                                  #
+# Configuration:                                                                                   #
+# Network: Custom genesis file                                                                     #
+# /home/ganendra/besu-25.4.0-qbft-ondemandd (Copy)/qbftnetwork/node5/../genesi                     #
+# s.json                                                                                           #
+# Network Id: 1337                                                                                 #
+# Data storage: Bonsai                                                                             #
+# Sync mode: Snap                                                                                  #
+# Sync min peers: 1                                                                                #
+# RPC HTTP APIs: ETH,NET,QBFT,ADMIN,DEBUG                                                          #
+# RPC HTTP port: 8550                                                                              #
+# Using LAYERED transaction pool implementation                                                    #
+# Using STACKED worldstate update mode                                                             #
+# Limit trie logs enabled: retention: 512; prune window: 5000                                      #
+#                                                                                                  #
+# Host:                                                                                            #
+# Java: openjdk-java-21                                                                            #
+# Maximum heap size: 2,73 GB                                                                       #
+# OS: linux-x86_64                                                                                 #
+# glibc: 2.41                                                                                      #
+# jemalloc: 5.3.0-0-g54eaed1d8b56b1aa528be3bdd1877e59c56fa90c                                      #
+# Total memory: 10,93 GB                                                                           #
+# CPU cores: 4                                                                                     #
+#                                                                                                  #
+# Plugin Registration Summary:                                                                     #
+# No plugins have been registered.                                                                 #
+# TOTAL = 0 of 0 plugins successfully registered.                                                  #
+#                                                                                                  #
+####################################################################################################
+2025-07-27 14:26:01.655+07:00 | main | INFO  | Besu | Security Module: localfile
+2025-07-27 14:26:01.656+07:00 | main | INFO  | VersionMetadata | Lookup version metadata file in data directory: /home/ganendra/besu-25.4.0-qbft-ondemandd (Copy)/qbftnetwork/node5/data
+2025-07-27 14:26:02.006+07:00 | main | INFO  | VersionMetadata | Existing version data detected. Besu version 25.4.0
+2025-07-27 14:26:02.033+07:00 | main | INFO  | VersionMetadata | Besu version 25.7.0 is higher than version 25.4.0 that last started. Updating version metadata.
+2025-07-27 14:26:02.272+07:00 | main | INFO  | Besu | Using the native implementation of alt bn128
+2025-07-27 14:26:02.277+07:00 | main | INFO  | Besu | Using the Java implementation of modexp
+2025-07-27 14:26:02.277+07:00 | main | INFO  | Besu | Using the native implementation of the signature algorithm
+2025-07-27 14:26:02.282+07:00 | main | INFO  | Besu | Using the native implementation of the blake2bf algorithm
+2025-07-27 14:26:02.801+07:00 | main | WARN  | Besu | Forcing tx-pool-min-gas-price=10, since it cannot be greater than the value of min-gas-price
+2025-07-27 14:26:02.831+07:00 | main | INFO  | KeyPairUtil | Attempting to load public key from /home/ganendra/besu-25.4.0-qbft-ondemandd (Copy)/qbftnetwork/node5/data/key
+2025-07-27 14:26:03.084+07:00 | main | INFO  | KeyPairUtil | Loaded public key 0x4a29a8ef10745b0d5b9d16aa0f2cf92b9ee7af975f2891c9b7a645ed5916b4ed1bd52ba60ef93aded479fe0229dfddc3f9c893b9a2425a95acfcc35be4910728 from /home/ganendra/besu-25.4.0-qbft-ondemandd (Copy)/qbftnetwork/node5/data/key
+2025-07-27 14:26:04.146+07:00 | main | INFO  | ProtocolScheduleBuilder | Protocol schedule created with milestones: [Berlin:0]
+2025-07-27 14:26:04.153+07:00 | main | INFO  | DatabaseMetadata | Lookup database metadata file in data directory: /home/ganendra/besu-25.4.0-qbft-ondemandd (Copy)/qbftnetwork/node5/data
+2025-07-27 14:26:04.340+07:00 | main | INFO  | RocksDBKeyValueStorageFactory | Existing database at /home/ganendra/besu-25.4.0-qbft-ondemandd (Copy)/qbftnetwork/node5/data. Metadata versionedStorageFormat=BaseVersionedStorageFormat{format=BONSAI, version=3}. Processing WAL...
+2025-07-27 14:26:06.677+07:00 | main | INFO  | FlatDbStrategyProvider | Flat db mode found FULL
+2025-07-27 14:26:06.693+07:00 | main | INFO  | FlatDbStrategyProvider | DB mode with code stored using code hash enabled = true
+2025-07-27 14:26:06.763+07:00 | main | INFO  | FlatDbStrategyProvider | Flat db mode found FULL
+2025-07-27 14:26:06.765+07:00 | main | INFO  | FlatDbStrategyProvider | DB mode with code stored using code hash enabled = true
+2025-07-27 14:26:07.311+07:00 | main | INFO  | TransactionPoolFactory | Transaction pool disabled while initial sync in progress
+2025-07-27 14:26:07.375+07:00 | main | INFO  | BesuControllerBuilder | QBFT is configured, creating initial sync for BFT
+2025-07-27 14:26:07.383+07:00 | main | INFO  | BFTPivotSelectorFromPeers | Creating pivot block selector for BFT node
+2025-07-27 14:26:07.501+07:00 | main | INFO  | SnapDownloaderFactory | Snap sync was requested, but cannot be enabled because the local blockchain is not empty.
+2025-07-27 14:26:07.777+07:00 | main | INFO  | TrieLogPruner | Trie log pruner queue preload starting...
+2025-07-27 14:26:07.790+07:00 | main | INFO  | TrieLogPruner | Attempting to load first 5000 trie logs from database...
+2025-07-27 14:26:07.809+07:00 | main | INFO  | TrieLogPruner | Trie log pruning will timeout after 30 seconds. If this is timing out, consider using `besu storage trie-log prune` subcommand, see https://besu.hyperledger.org/public-networks/how-to/bonsai-limit-trie-logs
+2025-07-27 14:26:07.820+07:00 | pool-10-thread-1 | INFO  | TrieLogPruner | Added 4 trie logs to prune queue. Commencing pruning of eligible trie logs...
+2025-07-27 14:26:07.854+07:00 | pool-10-thread-1 | INFO  | TrieLogPruner | Pruned 0 trie logs
+2025-07-27 14:26:07.862+07:00 | main | INFO  | TrieLogPruner | Trie log pruner queue preload complete.
+2025-07-27 14:26:07.866+07:00 | main | INFO  | RunnerBuilder | Resolved 1 bootnodes.
+2025-07-27 14:26:07.914+07:00 | main | INFO  | RunnerBuilder | Detecting NAT service.
+2025-07-27 14:26:08.369+07:00 | main | INFO  | Runner | Starting external services ... 
+2025-07-27 14:26:08.370+07:00 | main | INFO  | JsonRpcHttpService | Starting JSON-RPC service on 0.0.0.0:8550
+2025-07-27 14:26:09.287+07:00 | vert.x-eventloop-thread-1 | INFO  | JsonRpcHttpService | JSON-RPC service started and listening on 0.0.0.0:8550
+2025-07-27 14:26:09.310+07:00 | main | INFO  | AutoTransactionLogBloomCachingService | Starting auto transaction log bloom caching service.
+2025-07-27 14:26:09.323+07:00 | main | INFO  | LogBloomCacheMetadata | Lookup cache metadata file in data directory: /home/ganendra/besu-25.4.0-qbft-ondemandd (Copy)/qbftnetwork/node5/data/caches
+2025-07-27 14:26:09.384+07:00 | main | INFO  | Runner | Starting Ethereum main loop ... 
+2025-07-27 14:26:09.395+07:00 | main | INFO  | NatService | No NAT environment detected so no service could be started
+2025-07-27 14:26:09.395+07:00 | main | INFO  | NetworkRunner | Starting Network.
+2025-07-27 14:26:09.471+07:00 | nioEventLoopGroup-2-1 | INFO  | RlpxAgent | P2P RLPx agent started and listening on /[0:0:0:0:0:0:0:0]:30308.
+2025-07-27 14:26:09.471+07:00 | main | INFO  | PeerDiscoveryAgent | Starting peer discovery agent on host=0.0.0.0, port=30308. IPv6 available.
+2025-07-27 14:26:09.535+07:00 | vert.x-eventloop-thread-1 | INFO  | VertxPeerDiscoveryAgent | Started peer discovery agent successfully, on effective host=0:0:0:0:0:0:0:0 and port=30308
+2025-07-27 14:26:09.540+07:00 | vert.x-eventloop-thread-1 | INFO  | PeerDiscoveryAgent | P2P peer discovery agent started and listening on /[0:0:0:0:0:0:0:0]:30308
+2025-07-27 14:26:09.875+07:00 | vert.x-eventloop-thread-1 | INFO  | PeerDiscoveryAgent | Writing node record to disk. NodeRecord{seq=2, publicKey=0x024a29a8ef10745b0d5b9d16aa0f2cf92b9ee7af975f2891c9b7a645ed5916b4ed, udpAddress=Optional[/127.0.0.1:30308], tcpAddress=Optional[/127.0.0.1:30308], udp6Address=Optional.empty, tcp6Address=Optional.empty, asBase64=-Je4QM8F9TbSHD9clNg9GrPkn5koD2U6aTX9QTxcGyfELAsdF1F7wWNEfwL7yw4U0uduOHGYeyit-F8yFhW8DVRF--gCg2V0aMfGhH6MIgyAgmlkgnY0gmlwhH8AAAGJc2VjcDI1NmsxoQJKKajvEHRbDVudFqoPLPkrnuevl18okcm3pkXtWRa07YN0Y3CCdmSDdWRwgnZk, nodeId=0xd9ce10035da3e7299e642c4cb2f8890734f630b5958de7ddb3cb2fae8ed75f5b, customFields={tcp=30308, udp=30308, eth=[[0x7e8c220c, 0x]], id=V4, ip=0x7f000001, secp256k1=0x024a29a8ef10745b0d5b9d16aa0f2cf92b9ee7af975f2891c9b7a645ed5916b4ed}}
+2025-07-27 14:26:10.029+07:00 | main | INFO  | DefaultP2PNetwork | Enode URL enode://4a29a8ef10745b0d5b9d16aa0f2cf92b9ee7af975f2891c9b7a645ed5916b4ed1bd52ba60ef93aded479fe0229dfddc3f9c893b9a2425a95acfcc35be4910728@127.0.0.1:30308
+2025-07-27 14:26:10.029+07:00 | main | INFO  | DefaultP2PNetwork | Node address 0xb2f8890734f630b5958de7ddb3cb2fae8ed75f5b
+2025-07-27 14:26:10.088+07:00 | main | INFO  | NetworkRunner | Supported capabilities: [eth/66, eth/67, eth/68, eth/69], [istanbul/100], [snap/1]
+2025-07-27 14:26:10.089+07:00 | main | INFO  | DefaultSynchronizer | Starting synchronizer.
+2025-07-27 14:26:10.099+07:00 | main | INFO  | TransactionPoolFactory | Enabling transaction handling following initial sync
+2025-07-27 14:26:10.240+07:00 | main | INFO  | BftMiningCoordinator | Starting BFT mining coordinator following initial sync
+2025-07-27 14:26:10.376+07:00 | main | INFO  | FullSyncDownloader | Starting full sync.
+2025-07-27 14:26:10.378+07:00 | main | INFO  | FullSyncTargetManager | Unable to find sync target. Waiting for 1 peers minimum. Currently checking 0 peers for usefulness
+2025-07-27 14:26:10.397+07:00 | main | INFO  | Runner | Ethereum main loop is up.
+2025-07-27 14:26:16.088+07:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=4, Round=1}, hash=0x2d2dc545e8e2db917c37322fb14c8bdc1f015b049adbb97bdf6893d5c14b57b1
+2025-07-27 14:26:16.211+07:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Produced empty block #4 / 0 tx / 0 pending / 0 (0,0%) gas / (0x2d2dc545e8e2db917c37322fb14c8bdc1f015b049adbb97bdf6893d5c14b57b1)
+2025-07-27 14:26:18.219+07:00 | BftProcessorExecutor-QBFT-0 | INFO  | BftProcessor | Shutting down BFT event processor
+2025-07-27 14:26:18.222+07:00 | BesuCommand-Shutdown-Hook | INFO  | DefaultSynchronizer | Stopping synchronizer
+2025-07-27 14:26:18.223+07:00 | BesuCommand-Shutdown-Hook | INFO  | NetworkRunner | Stopping Network.
+2025-07-27 14:26:18.242+07:00 | BesuCommand-Shutdown-Hook | INFO  | EthProtocolManager | Stopping eth Subprotocol.
+2025-07-27 14:26:18.343+07:00 | BesuCommand-Shutdown-Hook | INFO  | EthProtocolManager | eth Subprotocol stopped.
+2025-07-27 14:26:18.346+07:00 | BesuCommand-Shutdown-Hook | INFO  | NetworkRunner | Network stopped.
+2025-07-27 14:26:18.346+07:00 | BesuCommand-Shutdown-Hook | INFO  | AutoTransactionLogBloomCachingService | Shutting down Auto transaction logs caching service.
+2025-07-27 14:26:18.349+07:00 | BesuCommand-Shutdown-Hook | INFO  | NatService | No NAT environment detected so no service could be stopped

@@ -1,0 +1,38 @@
+# Node 6 Configuration - config-node6.toml
+
+# Network
+data-path="data"
+genesis-file="../genesis.json"
+network-id=1337
+p2p-port=30308
+rpc-http-enabled=true
+rpc-http-api=["ETH","NET","QBFT","ADMIN","DEBUG"]
+rpc-http-host="0.0.0.0"
+rpc-http-port=8550
+rpc-http-cors-origins=["*"]
+host-allowlist=["*"]
+
+# Synchronization
+sync-mode="SNAP"
+fast-sync-min-peers=1
+
+# Mining/Validation
+miner-enabled=true
+miner-coinbase="0x0000000000000000000000000000000000000000"
+
+# Logging
+logging="INFO"
+
+
+# P2P Discovery
+discovery-enabled=true
+p2p-host="127.0.0.1" # Change to actual IP if nodes are on different machines
+p2p-interface="0.0.0.0"
+max-peers=25
+
+# Boot nodes - Add node1's enode URL
+bootnodes=["enode://4276719bf36ef44587a2a3338ff04f2db6ebd1b58006340a0f2a0edc3f6dde9b0dc7a2348b68020672e0db76e31f5053c4217053d9965fe5934c216f09e1f0a9@127.0.0.1:30303"]
+
+# Add to your config-node1.toml
+min-gas-price=10
+
